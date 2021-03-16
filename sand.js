@@ -7,10 +7,11 @@ class Sand {
           'friction':0.3,
           'density':1.0
       }
-      this.body = Bodies.rectangle(x, y, 5, 5, options);
-      this.width = 5;
-      this.height = 5;
-      
+        this.x=x;
+        this.y=y;
+        this.r=r 
+        this.body=Bodies.circle(this.x, this.y, (this.r-20)/2, options)
+        
       World.add(world, this.body);
     }
     display(){
@@ -23,7 +24,7 @@ class Sand {
       strokeWeight(15);
       stroke("voilet");
       fill("blue");
-      rect(500,500, this.width, this.height);
+      ellipse(0,0,this.r, this.r);
       pop();
     }
   };
