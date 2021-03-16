@@ -20,7 +20,7 @@ class Sand {
       push();
       translate(pos.x, pos.y);
       rotate(angle);
-      rectMode(CENTER);
+      ellipseMode(CENTER);
       strokeWeight(15);
       stroke("voilet");
       fill("blue");
