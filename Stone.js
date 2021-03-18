@@ -5,7 +5,7 @@ class stone {
         'friction':0.3,
         'density':1.0
     }
-    this.body.polygon(x, y, 5, 30, [options])
+    this.body=Bodies.rectangle(x, y, 5, 30, [options])
     this.width = 50;
     this.height = 50;
     
